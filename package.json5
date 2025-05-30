@@ -1,0 +1,18 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "bin/dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "nuxt prepare",
+    "cleanup": "pnpx nuxi@latest cleanup",
+  },
+  "devDependencies": {
+    "nuxt": "3.17.4",
+    "typescript": "5.8.3",
+    "vue-tsc": "2.2.10"
+  },
+}
