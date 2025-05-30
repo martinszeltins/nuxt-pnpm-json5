@@ -1,8 +1,11 @@
 Cannot find matching package.json in modules/myNuxtModule.ts or parent directories when using pnpm with package.json5
 
-pnpm supports package.json5 format which I am using in my Nuxt project. But `nuxt prepare` gives me this error:
+pnpm 10 supports package.json5 format which I am using in my Nuxt project. But `nuxt prepare` gives me this error. This needs to be run with pnpm 10 because older versions don't have json5 support. Check your pnpm version before running pnpm install (!)
 
 ````
+$ pnpm --version
+10.11.0
+
 $ pnpm install
 Lockfile is up to date, resolution step is skipped
 Already up to date
@@ -30,3 +33,5 @@ ELIFECYCLE  Command failed with exit code 1.
 ````
 
 Looks to me like a bug with `nuxt prepare` command.
+
+https://stackblitz.com/~/github.com/martinszeltins/nuxt-pnpm-json5
