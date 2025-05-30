@@ -1,6 +1,6 @@
 Cannot find matching package.json in modules/myNuxtModule.ts or parent directories when using pnpm with package.json5
 
-pnpm 10 supports package.json5 format which I am using in my Nuxt project. But `nuxt prepare` gives me this error. This needs to be run with pnpm 10 because older versions don't have json5 support. Check your pnpm version before running pnpm install (!)
+pnpm 10 supports package.json5 format which I am using in my Nuxt project. But `nuxt prepare` gives me this error. This needs to be run with pnpm 10 because older versions don't have json5 support. Check your pnpm version before running pnpm install (!). Stackblitz doesn't seem to have pnpm 10 installed so you might need to test this locally.
 
 ````
 $ pnpm --version
